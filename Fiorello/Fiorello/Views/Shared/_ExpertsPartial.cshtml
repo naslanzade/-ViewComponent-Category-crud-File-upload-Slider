@@ -1,0 +1,19 @@
+﻿@model List<Expert>
+
+<div class="row pb-5">
+    @foreach (var expert in Model)
+    {
+        <div class="col-md-6 col-lg-3">
+            <div class="item text-center">
+                <div class="img">
+                    <img src="~/img/@expert.ExpertImage" class="img-fluid rounded-circle" alt="">
+                </div>
+                <div class="text mt-3">
+                    <h6>@expert.FullName</h6>
+                    <p class="text-black-50">@expert.Position</p>
+                </div>
+            </div>
+        </div>
+    }
+
+</div>
